@@ -1,0 +1,341 @@
+<html class="h-100 reveal-full-page fa-events-icons-ready">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./source/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .font-sans {
+      font-family: 'Lato', 'SimHei', 'STHeiti', 'SimHei', 'Serif';
+    }
+    .font-serif {
+      font-family: 'Source Serif Pro', 'Songti SC', 'SimSun', 'Serif', serif;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./source/reveal.css">
+  <link rel="stylesheet" href="./source/simple.css" id="theme">
+
+  <style>
+  .reveal .slide-number {
+    font-size: 26px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  .reveal .slides {
+    border: 1.5px #ddd solid;
+    border-radius: 7px;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: 'Lato', 'SimHei', 'STXihei', 'Sans Serif';
+    font-weight: 400;
+  }
+
+  .reveal p, .reveal li, .reveal center {
+    font-size: 32px;
+    font-family: 'Lato', 'STHeiti', 'SimHei', 'Sans Serif';
+  }
+
+  .reveal li + li {
+    margin-top: 10px;
+  }
+
+  .reveal ul {
+    display: block;
+    margin-right: 15px;
+  }
+
+  .reveal p, .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+    padding:  0 25px 0 25px;
+  }
+
+  .reveal table {
+    font-size: 32px;
+    font-family: 'Lato', 'STHeiti', 'SimHei', 'Sans Serif';
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .reveal th {
+    background-color: #eee;
+  }
+
+  .reveal tr:nth-child(even) {
+    background-color: #efffff;
+  }
+
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    text-align: left;
+    margin: 0 0 20px 0;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: normal;
+  }
+
+  .reveal h1 {
+    margin: 0 10 0 10;
+    font-size: 60px;
+  }
+  .reveal .middle h1 {
+    text-align: center;
+  }
+
+  .reveal h2 {
+    font-size: 48px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
+  .reveal h3 { font-size: 1.15em; }
+  .reveal h4 { font-size: 1.05em; }
+
+  .reveal .center {
+    text-align: center;
+  }
+
+  .reveal .middle {
+    height: 728px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .reveal pre {
+    font-size: 28px;
+    background-color: #eee;
+    border-radius: 3mm;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .reveal pre code {
+    max-height: none;
+  }
+
+  .reveal code {
+    font-family: 'Inconsolata', 'STKaiti', 'KaiTi', 'Sans Serif', Monospace;
+  }
+
+  .reveal .middle blockquote {
+    text-align: center;
+    color: rgb(106, 0, 95);
+    background: none;
+    box-shadow: none;
+  }
+
+  .reveal .middle blockquote a {
+    color: inherit;
+  }
+
+  .reveal blockquote p, .reveal blockquote li {
+    font-family: 'Lato', 'STKaiti', 'KaiTi', 'Sans Serif';
+  }
+
+  section .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reveal .author-block {
+    margin: 75px 0 35px 0;
+  }
+  .reveal .author-affiliation img {
+    margin: 15px 0 0 0;
+  }
+  .reveal .author-block p, .reveal .author-affiliation p  {
+    font-family: 'Kaiti', 'STKaiti', 'Serif', 'Times', 'Times New Roman';
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  .reveal .author-affiliation {
+    display: inline-block;
+    font-size: 90%;
+  }
+  .reveal hr {
+    border: 10px solid white;
+  }
+  .reveal li {
+    margin-top: 10px;
+  }
+  </style>
+
+  <title>公平组合游戏入门(I)</title>
+</head>
+
+<body class="d-flex flex-column h-100 reveal-viewport">
+  <div class="reveal slide focused has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="fast" data-background-transition="fade">
+    <div class="slides" style="width: 1024px; height: 768px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(1.13875);">
+      <section class="stack present" style="display: block;">
+        <section class="present" style="display: block;">   
+          <div class="center middle">
+            <div style="width:100%">
+              <h1 id="_1" class="text-2xl mt-2 font-sans">公平组合游戏入门(I)</h1>
+              <div class="py-16">
+                <p class="font-serif my-1 text-amber-900">潘奕铭</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" hidden="" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">Overview</h2>
+            <p class="font-serif my-1">分享内容</p>
+            <ul class="list-disc font-serif">
+              <li class="ml-8">什么是公平组合游戏</li>
+              <li class="ml-8">解决公平组合游戏的思路（部分）
+                <ul class="list-disc font-serif">
+                  <li class="ml-8">必胜必败态</li>
+                  <li class="ml-8">对称性</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section class="stack present" style="display: block;">
+        <section class="present" style="display: block;">   
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">入门题</h2>
+            <p class="font-serif my-1">巴什博弈</p>
+            <p class="font-serif my-1">Alice 和 Bob 在玩游戏，有 n 颗石子，两人轮流取走石子，每次可以取 1 - m 颗石子。Alice 先手，取走最后一颗石子的人获胜。</p>
+            <p class="font-serif my-1">问：Alice 先手必胜么？</p>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">公平组合游戏定义</h2>
+            <p class="font-serif my-1">若一个游戏满足：</p>
+            <ul class="list-disc font-serif">
+              <li class="ml-8">双人游戏，两名玩家交替行动，两个人都绝顶聪明，每一次都是选择最优的策略行动</li>
+              <li class="ml-8">合法的行动是一个有限的状态集合，意味着游戏可以在有限步结束</li>
+              <li class="ml-8">在游戏进程的任意时刻，可以执行的合法行动与轮到的哪名玩家无关</li>
+              <li class="ml-8">不能行动的玩家判负</li>
+            </ul>
+            <hr>
+            <p class="font-serif my-1">Q：围棋/象棋算公平组合游戏么？</p>
+          </div>
+        </section>
+      </section>
+      <section class="stack present" style="display: block;">
+        <section class="present" style="display: block;">   
+          <div class="center middle">
+            <div style="width:100%">
+              <h1 id="_1" class="text-2xl mt-2 font-sans">必胜必败态</h1>
+            </div>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">博弈图</h2>
+            <p class="font-serif my-1">如果我们将每一步走完的游戏局面视为一个节点，再从每个节点向它的后继节点连边，我们就可以得到一张博弈状态图，且这张图是有向无环图。</p>
+            <p class="font-serif my-1">以最开始的入门题为例，我们假定 n = 8，m = 3，那么我们可以画出如下的博弈状态图：</p>
+            <img src="./source/game-theory-i.svg" class="center"/>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">必胜必败态定理</h2>
+            <p class="font-serif my-1">定义<b>必胜状态</b>为<b>先手必胜的状态</b>，<b>必败状态</b>为<b>先手必败的状态：</b></p>
+            <ol class="font-serif">
+              <li class="ml-8">没有后继状态的状态是必败状态。</li>
+              <li class="ml-8">一个状态是必胜状态当且仅当存在至少一个必败状态为它的后继状态。</li>
+              <li class="ml-8">一个状态是必败状态当且仅当它的所有后继状态均为必胜状态。</li>
+            </ol>
+            <p class="font-serif my-1">还是以刚才的入门题为例，我们对博弈状态图进行推导：</p>
+            <img src="./source/game-theory-ii.svg" class="center"/>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">必胜必败态定理</h2>
+            <p class="font-serif my-1">因此，对于很多公平组合游戏，我们能表示出来当前游戏的状态，就可以利用必胜必败态定理在博弈图上拓扑逆序推导出每个节点是必胜态还是必败态。</p>
+            <p class="font-serif my-1">假设 N 为状态总数，M 为边数，那么时间复杂度即为 O(N+M)。</p>
+          </div>
+        </section>
+      </section>
+      <section class="stack present" style="display: block;">
+        <section class="present" style="display: block;">   
+          <div class="center middle">
+            <div style="width:100%">
+              <h1 id="_1" class="text-2xl mt-2 font-sans">例题散讲</h1>
+            </div>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">Ferguson Game</h2>
+            <p class="font-serif my-1">Alice 和 Bob 两个人在玩游戏。当前有两个盒子，一开始其中一个有 m 颗糖，另一个有 n 颗糖。每次移动是将一个盒子清空，而把另一个盒子的一些糖拿到被清空的盒子中，使得两个盒子至少各有一颗糖，最后不能移动的人判负，问 Alice 是否必胜？</p>
+            <p class="font-serif my-1">数据范围：0 < n <= 1e9, 0 < m <= 1e9</p>
+            <p class="font-serif my-1">Hint：不妨用必胜必败态定理打个表试一下？</p>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="display: block;">  
+          <div>
+            <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">A Plate Game</h2>
+            <p class="font-serif my-1">Alice 和 Bob 两个人在玩游戏。当前有一张指定大小(w x h)的矩形桌子和一个半径为 r 的圆盘。两人轮流往桌子上放圆盘，要求放置的时候圆盘不能重叠，不能一部分摆出桌子外，不能摆放的人就失败了，Alice 先手，问 Alice 是否必胜？</p>
+            <p class="font-serif my-1">数据范围：1 <= w, h, r <= 100</p>
+          </div>
+        </section>
+      </section>
+      <section class="future" aria-hidden="true" style="display: none;">    
+        <div>
+          <h2 id="overview" class="text-xl mt-2 pb-2 font-sans">总结</h2>
+          <p class="font-serif my-1">Take-away message</p>
+          <ul class="list-disc font-serif">
+            <li class="ml-8">公平组合游戏本质上可以转化为一个有向无环图，利用必胜必败态定理依据逆拓扑序推出所有节点的状态</li>
+            <li class="ml-8">构造游戏的对称性是解决公平组合游戏的一个思考方向</li>
+          </ul>
+          <hr>
+          <p class="font-serif my-1">感兴趣的可以搜索以下关键字去继续学习：</p>
+          <ul class="list-disc font-serif">
+            <li class="ml-8">Nim 游戏</li>
+            <li class="ml-8">戚佐夫博弈 / 斐波那契博弈</li>
+            <li class="ml-8">SG 定理</li>
+            <li class="ml-8">翻硬币游戏</li>
+          </ul>
+          <hr>
+          <p class="font-serif my-1">例题详细答案 & 其他练习题：</p>
+          <ul class="list-disc font-serif">
+            <li class="ml-8">https://bytedance.feishu.cn/docx/doxcnvEo25rENx6uz1EjFO7MgUh</li>
+          </ul>
+        </div>
+      </section>
+      <section class="future" aria-hidden="true" style="display: none;">    
+        <div>
+          <div class="center middle">
+            <div style="width:100%">
+              <h1 id="end" class="text-2xl mt-2 font-sans">End.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+  <script src="./source/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      width: 1024,
+      height: 768,
+      slideNumber: 'c/t',
+      controlsTutorial: false,
+      progress: false,
+      hash: true,
+      center: false,
+      autoAnimateUnmatched: true,
+      autoAnimateEasing: 'ease-out',
+      autoAnimateDuration: 0.3,
+      transitionSpeed: 'fast',
+    });
+  </script>
+</body>
+</html>
